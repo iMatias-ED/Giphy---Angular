@@ -1,0 +1,22 @@
+<div class="search-input-container">
+    <label for="gif-type-input">TIPO DE GIF:</label>
+    <input type="text" id="gif-type-input"
+        pInputText [(ngModel)]="userInput" 
+        (ngModelChange)="searchGif($event)"
+        placeholder="Busque los gifs que quieras!"
+    >
+    <label for="result-limit-input">CANTIDAD A MOSTRAR:</label>
+    <input type="text" id="result-limit-input"
+        pInputText [(ngModel)]="resultLimit" 
+        (ngModelChange)="resultLimitChanged()"
+        placeholder="Cantidad de resultados a mostrar"
+    >
+</div>
+
+<h2>Resultados</h2>
+
+<div class="search-result-container">
+    <div class="gif-container" *ngFor="let url of urlArray">
+        <img src="{{url}}">
+    </div>
+</div>

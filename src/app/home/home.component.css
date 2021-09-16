@@ -1,0 +1,19 @@
+.title-section{
+    height: 50vh;
+    min-height: 400px;
+    width: 100%;
+    background-color: #7D2181;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.title-section h1{
+    font-size: 7vw;
+    color: white;
+    text-shadow: 4px 4px black;
+}
