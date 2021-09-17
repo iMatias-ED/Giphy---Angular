@@ -13,10 +13,13 @@
     >
 </div>
 
-<h2>Resultados</h2>
+<section *ngIf="urlArray.length > 0">
+    <h2>{{urlArray.length}} Resultados </h2>
 
-<div class="search-result-container">
-    <div class="gif-container" *ngFor="let url of urlArray">
-        <img src="{{url}}">
+    <div class="search-result-container">
+        <div class="gif-container image-gallery" *ngFor="let url of urlArray">
+            <img src="{{url}}">
+        </div>
     </div>
-</div>
+</section>
+

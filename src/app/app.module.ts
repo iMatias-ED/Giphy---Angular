@@ -9,12 +9,12 @@ import { HomeComponent } from './home/home.component';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeGifSectionComponent } from './home-gif-section/home-gif-section.component';
+import { SearchWidgetComponent } from './search-widget/search-widget.component';
 
 //Prime ng
 import {TabMenuModule} from 'primeng/tabmenu';
 import {InputTextModule} from 'primeng/inputtext';
-import { SearchWidgetComponent } from './search-widget/search-widget.component';
-
+import {PaginatorModule} from 'primeng/paginator';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,8 @@ import { SearchWidgetComponent } from './search-widget/search-widget.component';
     HttpClientModule,
     FormsModule,
     TabMenuModule,
-    InputTextModule
+    InputTextModule,
+    PaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
