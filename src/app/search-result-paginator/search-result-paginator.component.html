@@ -1,0 +1,17 @@
+
+
+<div class="card">
+    <div class="image-gallery">
+        <img src="{{urlArray[first+1]}}"/>
+    </div>
+    <p-paginator 
+        [first]="first" 
+        [rows]="1" 
+        [totalRecords]="totalRecords" 
+        (onPageChange)="onPageChange($event)"
+        [showJumpToPageDropdown]="true" 
+        [showPageLinks]="true">
+    </p-paginator>
+</div>
+
+

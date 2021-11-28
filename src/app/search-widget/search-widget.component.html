@@ -14,12 +14,12 @@
 </div>
 
 <section *ngIf="urlArray.length > 0">
+    
     <h2>{{urlArray.length}} Resultados </h2>
 
-    <div class="search-result-container">
-        <div class="gif-container image-gallery" *ngFor="let url of urlArray">
-            <img src="{{url}}">
-        </div>
-    </div>
+    <app-search-result-paginator 
+        [urlArray]='urlArray'
+        [totalRecords]='urlArray.length'    
+    ></app-search-result-paginator>
 </section>
 
